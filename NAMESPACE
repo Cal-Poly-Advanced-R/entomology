@@ -1,0 +1,13 @@
+# Generated manually to match roxygen comments in this environment
+export(beetle_angle_degrees)
+export(beetle_centroid)
+export(beetle_classify_nearest)
+export(beetle_correlation)
+export(beetle_counts)
+export(beetle_data)
+export(beetle_filter)
+export(beetle_mean)
+export(beetle_range)
+export(beetle_sd)
+export(beetle_species)
+importFrom(rlang,.data)

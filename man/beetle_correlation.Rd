@@ -1,0 +1,7 @@
+\name{beetle_correlation}
+\alias{beetle_correlation}
+\title{Correlation between width and angle}
+\usage{beetle_correlation(species = NULL)}
+\arguments{\item{species}{Optional character vector of species labels.}}
+\value{A numeric scalar.}
+\description{Computes the Pearson correlation between width and angle, optionally within one or more species.}

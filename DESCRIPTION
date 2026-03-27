@@ -1,0 +1,23 @@
+Package: entomology
+Type: Package
+Title: Simple Teaching Functions for the Flea Beetles Data
+Version: 0.1.1
+Authors@R: person(given = "OpenAI", family = "Assistant", role = c("aut", "cre"), email = "example@example.com")
+Description: Teaching-oriented helper functions for simple calculations on a flea beetles dataset.
+    The package includes the beetle data used in an introductory biostatistics example
+    and provides small, readable functions for summaries, transformations, and a simple
+    nearest-centroid classifier.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Imports:
+    dplyr,
+    purrr,
+    readr,
+    rlang,
+    tibble
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,7 @@
+\name{beetle_centroid}
+\alias{beetle_centroid}
+\title{Compute a species centroid}
+\usage{beetle_centroid(species)}
+\arguments{\item{species}{A single species label.}}
+\value{A named numeric vector with elements \code{Width} and \code{Angle}.}
+\description{Computes the mean width and mean angle for a single species.}
