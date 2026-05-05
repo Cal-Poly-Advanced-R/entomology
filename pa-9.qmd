@@ -1,0 +1,45 @@
+---
+title: "pa-9"
+format: html
+execute:
+  error: true
+---
+
+```{r}
+### DO NOT IMPORT ANY OTHER LIBRARIES AT ANY TIME
+
+library(entomology)
+```
+
+## Unit tests:
+
+
+## Final list of bugs fixed:
+
+* `angle.R`:
+
+* `centroid.R`:
+
+* `classify.R`:
+
+* `correlation.R`:
+
+* `counts.R`:
+
+* `data.R`:
+
+* `filter.R`:
+
+* `summary.R` (1):
+
+* `summary.R` (2):
+
+* `validation.R`:
+
+
+
+## Test Coverage (Stat 541 Only)
+
+```{r}
+covr::package_coverage(".")
+```
