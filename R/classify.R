@@ -13,7 +13,7 @@
 beetle_classify_nearest <- function(width, angle) {
   centroids <- beetle_species() |>
     purrr::map(beetle_centroid) |>
-    list_rbind()
+    bind_rows()
 
   centroids |>
     mutate(

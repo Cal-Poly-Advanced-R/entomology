@@ -9,11 +9,14 @@
 #'
 #' @export
 beetle_data <- function() {
-  path <- system.file("extdata", "beetles.csv", package = "entomology")
+  path <- system.file("extdata",
+                      "beetles.csv",
+                      package = "entomology")
 
   readr::read_csv(path, show_col_types = FALSE) |>
     dplyr::mutate(
-      Species = factor(Species, levels = c("Con", "Hei", "Hep"))
+      Species = factor(Species,
+                       levels = c("Con", "Hei", "Hep"))
     )
 }
 

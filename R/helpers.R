@@ -7,7 +7,6 @@
 #' @param species Optional character vector of species labels.
 #'
 #' @return Invisibly returns `TRUE` when the input is valid.
-#' @noRd
 validate_species <- function(species = NULL) {
   allowed <- c("Con", "Hei", "Hep")
 
@@ -30,7 +29,13 @@ validate_species <- function(species = NULL) {
 #' @param variable A character string naming the variable.
 #'
 #' @return A validated character string.
-#' @noRd
 validate_variable <- function(variable) {
-  rlang::arg_match(variable, values = c("Width", "Angle"))
+  check <- variable %in% c("Width", "Angle")
+
+  if (!check) {
+    stop("Please provide a quantitative variable.")
+  }
+
+  return(variable)
+
 }

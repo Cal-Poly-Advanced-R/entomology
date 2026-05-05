@@ -2,7 +2,7 @@ Package: entomology
 Type: Package
 Title: Simple Teaching Functions for the Flea Beetles Data
 Version: 0.1.1
-Authors@R: person(given = "OpenAI", family = "Assistant", role = c("aut", "cre"), email = "example@example.com")
+Authors@R: person(given = "Kelly", family = "Bodwin", role = c("aut", "cre"), email = "kelly@bodwin.us")
 Description: Teaching-oriented helper functions for simple calculations on a flea beetles dataset.
     The package includes the beetle data used in an introductory biostatistics example
     and provides small, readable functions for summaries, transformations, and a simple

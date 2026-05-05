@@ -8,13 +8,16 @@
 #'
 #' @return A numeric scalar.
 #'
+#' @importFrom dplyr summarize pull
 #' @export
-beetle_mean <- function(variable = Width, species = NULL) {
+beetle_mean <- function(variable = Width,
+                        species = NULL) {
+
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
-    dplyr::summarise(value = mean({{variable}})) |>
-    dplyr::pull(value)
+    summarize(value = mean(.data[[variable]])) |>
+    pull(value)
 }
 
 #' Compute the standard deviation of a beetle measurement

@@ -11,11 +11,11 @@ beetle_centroid <- function(species) {
   validate_species(species)
 
   if (length(species) != 1L) {
-    stop("species must be a single value.", call. = FALSE)
+    stop("species must be a single value.")
   }
 
   beetle_filter(species) |>
-    dplyr::summarise(
+    dplyr::summarize(
       Width = mean(Width),
       Angle = mean(Angle)
     )
