@@ -30,7 +30,9 @@ beetle_mean <- function(variable = Width,
 #' @return A numeric scalar.
 #'
 #' @export
-beetle_sd <- function(variable = Width, species = NULL) {
+beetle_sd <- function(variable = Width,
+                      species = NULL) {
+
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
@@ -47,14 +49,17 @@ beetle_sd <- function(variable = Width, species = NULL) {
 #'
 #' @return A numeric vector of length 2 containing the minimum and maximum.
 #'
+#' @importFrom dplyr summarize pull
 #' @export
-beetle_range <- function(variable = Width, species = NULL) {
+beetle_range <- function(variable = Width,
+                         species = NULL) {
+
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
-    dplyr::summarise(
-      min = min({{variable}}),
-      max = max(variable)
+    dplyr::summarize(
+      min = min(.data[[variable]]),
+      max = max(.data[[variable]])
     ) |>
     unlist(use.names = FALSE)
 }
