@@ -8,7 +8,7 @@
 #' @return A numeric vector of angles in degrees.
 #'
 #' @export
-convert_angle_degrees <- function(angle) {
+beetle_angle_degrees <- function(angle) {
 
   angle * 7
 

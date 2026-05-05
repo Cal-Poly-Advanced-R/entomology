@@ -29,6 +29,7 @@ beetle_mean <- function(variable = Width,
 #'
 #' @return A numeric scalar.
 #'
+#' @importFrom dplyr summarize pull
 #' @export
 beetle_sd <- function(variable = Width,
                       species = NULL) {
@@ -36,8 +37,8 @@ beetle_sd <- function(variable = Width,
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
-    dplyr::summarise(value = sd({{variable}}) |>
-    dplyr::pull(value)
+    summarize(value = sd(.data[[variable]]) |>
+    pull(value)
 }
 
 #' Compute the range of a beetle measurement
@@ -57,9 +58,9 @@ beetle_range <- function(variable = Width,
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
-    dplyr::summarize(
+    summarize(
       min = min(.data[[variable]]),
       max = max(.data[[variable]])
     ) |>
-    unlist(use.names = FALSE)
+    unlist()
 }
