@@ -14,9 +14,9 @@ beetle_centroid <- function(species) {
     stop("species must be a single value.")
   }
 
-  beetle_filter(species) |>
-    dplyr::summarize(
-      Width = mean(Width),
-      Angle = mean(Angle)
-    )
+
+  dat <- beetle_filter(species)
+
+  Width <- mean(dat$Width)
+  Angle <- mean(dat$Angle)
 }

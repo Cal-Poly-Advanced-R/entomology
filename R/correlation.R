@@ -10,5 +10,5 @@
 #' @export
 beetle_correlation <- function(species = NULL) {
   dat <- beetle_filter(species)
-  stats::cor(dat$width, dat$angle)
+  cor(dat$width, dat$angle)
 }
