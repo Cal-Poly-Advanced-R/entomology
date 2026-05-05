@@ -10,13 +10,13 @@
 #'
 #' @importFrom dplyr summarize pull
 #' @export
-beetle_mean <- function(variable = Width,
+beetle_mean <- function(variable,
                         species = NULL) {
 
   variable <- validate_variable(variable)
 
   beetle_filter(species) |>
-    summarize(value = mean(.data[[variable]])) |>
+    summarize(value = mean(variable)) |>
     pull(value)
 }
 
@@ -31,7 +31,7 @@ beetle_mean <- function(variable = Width,
 #'
 #' @importFrom dplyr summarize pull
 #' @export
-beetle_sd <- function(variable = Width,
+beetle_sd <- function(variable,
                       species = NULL) {
 
   variable <- validate_variable(variable)
@@ -52,7 +52,7 @@ beetle_sd <- function(variable = Width,
 #'
 #' @importFrom dplyr summarize pull
 #' @export
-beetle_range <- function(variable = Width,
+beetle_range <- function(variable,
                          species = NULL) {
 
   variable <- validate_variable(variable)

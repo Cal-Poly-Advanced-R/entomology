@@ -29,10 +29,11 @@ beetle_data <- function() {
 #' @examples
 #' beetle_species()
 #'
+#' @importFrom dplyr distinct select
 #' @export
 beetle_species <- function() {
   beetle_data() |>
-    dplyr::distinct(Species) |>
-    dplyr::select(Species) |>
+    distinct(Species) |>
+    select(Species) |>
     as.character()
 }
