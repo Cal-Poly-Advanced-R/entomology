@@ -8,7 +8,7 @@
 #'
 #' @return A single species label.
 #'
-#' @importFrom dplyr mutate slice_min pull
+#' @importFrom dplyr mutate slice_min pull bind_rows
 #' @export
 beetle_classify_nearest <- function(width, angle) {
   centroids <- beetle_species() |>
