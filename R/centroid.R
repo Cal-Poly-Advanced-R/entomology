@@ -4,7 +4,7 @@
 #'
 #' @param species A single species label.
 #'
-#' @return A named numeric vector with elements `Species`, `Width`, and `Angle`.
+#' @return A tibble with columns `Species`, `Width`, and `Angle`.
 #'
 #' @export
 beetle_centroid <- function(species) {
