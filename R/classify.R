@@ -1,7 +1,7 @@
 #' Classify a beetle by nearest centroid
 #'
 #' Predicts a species label by comparing a new `(width, angle)` pair to the
-#' centroid of each species and selecting the nearest one.
+#' centroid of each species and selecting the nearest one in Euclidean distance.
 #'
 #' @param width A numeric width value.
 #' @param angle A numeric angle value.

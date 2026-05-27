@@ -1,45 +1,85 @@
 ---
-title: "pa-9"
+title: "Practice Activity 9"
 format: html
 execute:
-  error: true
+  eval: false
 ---
 
-```{r}
-### DO NOT IMPORT ANY OTHER LIBRARIES AT ANY TIME
 
-library(entomology)
-```
-
-## Unit tests:
+## Syntax Error in `summary.R`
 
 
-## Final list of bugs fixed:
-
-* `angle.R`:
-
-* `centroid.R`:
-
-* `classify.R`:
-
-* `correlation.R`:
-
-* `counts.R`:
-
-* `data.R`:
-
-* `filter.R`:
-
-* `summary.R` (1):
-
-* `summary.R` (2):
-
-* `validation.R`:
+#### Explanation
 
 
 
-## Test Coverage (Stat 541 Only)
 
-```{r}
-covr::package_coverage(".")
-```
+## `data.R` 
+
+
+#### Explanation
+
+
+
+## `validation.R` 
+
+
+#### Explanation
+
+
+#### Unit Test
+
+
+
+## `counts.R`
+
+
+#### Explanation
+
+#### Unit Test
+
+
+## `correlation.R` 
+
+
+#### Explanation
+
+#### Unit Test
+
+
+
+## `centroid.R`
+
+#### Explanation:
+
+#### Unit Test
+
+
+
+## `angle.R`
+
+#### Explanation:
+
+#### Unit Test:
+
+
+## `filter.R` 
+
+#### Explanation:
+
+#### Unit Test
+
+## `classify.R` 
+
+#### Explanation:
+
+#### Unit Test:
+
+## `summary.R` 
+
+
+#### Explanation:
+
+#### Unit Test:
+
+
